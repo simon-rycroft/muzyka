@@ -12,10 +12,24 @@ var teori = require('./teori');
 
 ### Chords
 
-Discover chords from arrays of pitches:
+Discover chords from arrays of notes (the first note is assumed to be the root so ordering is important):
 
 ```javascript
-var chord = teori.getChordByPitches(['C4', 'E4', 'G4', 'B4']);
+var chord = teori.getChordByNotes(['C', 'E', 'G', 'B']);
+
+/*
+Gives us a chord object:
+{
+    name: 'Cmaj7',
+    notes: ['C', 'E', 'G', 'B']
+}
+*/
+```
+
+Discover chords from arrays of pitches (order is not important):
+
+```javascript
+var chord = teori.getChordByPitches(['E4', 'G4', 'C4' 'B4']);
 
 /*
 Gives us a chord object:
@@ -29,13 +43,13 @@ Gives us a chord object:
 Get chords by name:
 
 ```javascript
-var chord = teori.getChordByName('Gm');
+var chord = teori.getChordByName('Cmaj7');
 
 /*
 Gives us a chord object:
 {
-    name: 'Gm',
-    notes: ['G', 'Bb', 'D']
+    name: 'Cmaj7',
+    notes: ['C', 'E', 'G', 'B']
 }
 */
 ```
