@@ -20,6 +20,5 @@
   },
   "homepage": "https://github.com/simonrycroft/muzyka",
   "devDependencies": {
-    "webpack": "^1.11.0"
   }
 }
