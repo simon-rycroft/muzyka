@@ -1,0 +1,25 @@
+{
+  "name": "muzyka",
+  "version": "0.0.0",
+  "description": "> Polish, meaning music. A music theory Javascript library",
+  "main": "musyka.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simonrycroft/muzyka.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simonrycroft/muzyka/issues"
+  },
+  "homepage": "https://github.com/simonrycroft/muzyka",
+  "devDependencies": {
+    "webpack": "^1.11.0"
+  }
+}
