@@ -1,13 +1,10 @@
 {
   "name": "muzyka",
   "version": "0.0.0",
-  "description": "> Polish, meaning music. A music theory Javascript library",
+  "description": "A music theory Javascript library.",
   "main": "musyka.js",
-  "directories": {
-    "example": "example"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "test": "mocha --compilers js:babel/register tests/"
   },
   "repository": {
     "type": "git",
@@ -20,5 +17,8 @@
   },
   "homepage": "https://github.com/simonrycroft/muzyka",
   "devDependencies": {
+    "babel": "^5.8.21",
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5"
   }
 }

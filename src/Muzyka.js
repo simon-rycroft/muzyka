@@ -7,5 +7,9 @@
 * Released under the MIT license
 */
 
-export var test = 'es6';
+var Muzyka = {
+    greeting: 'Hello ES6!'
+};
+
+export default Muzyka;
 
