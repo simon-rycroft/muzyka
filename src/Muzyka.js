@@ -1,3 +1,4 @@
+'use strict';
 /*
 * Musyka - A Javascript Music Theory Library v0.0.0
 *
@@ -7,9 +8,9 @@
 * Released under the MIT license
 */
 
-var Muzyka = {
-    greeting: 'Hello ES6!'
-};
-
-export default Muzyka;
+export default class Muzyka {
+    getGreeting() {
+        return 'Hello ES6!';
+    }
+}
 

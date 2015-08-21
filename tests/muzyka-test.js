@@ -1,12 +1,13 @@
 'use strict';
 
-import {expect} from 'chai';
+import {assert, expect} from 'chai';
 
-import {Muzyka} from '../src';
+import Muzyka from '../src/Muzyka';
 
 describe('Hello world', function () {
     it('should greet us', function () {
-        assert.equal('Hello ES6!', Muzyka.greeting);
+        let muzyka = new Muzyka();
+        assert.equal('Hello ES6!', muzyka.getGreeting());
     });
 });
 
