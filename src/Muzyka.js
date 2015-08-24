@@ -8,9 +8,18 @@
 * Released under the MIT license
 */
 
+import Note from './Note';
+
 export default class Muzyka {
-    getGreeting() {
-        return 'Hello ES6!';
+
+    constructor() {
+        this._note = new Note();
     }
+
+    get note() {
+        return this._note;
+    }
+
 }
+
 
