@@ -12,14 +12,12 @@ import Note from './Note';
 
 export default class Muzyka {
 
-    constructor() {
-        this._note = new Note();
-    }
-
-    get note() {
+    note(id) {
+        if (!this._note) {
+            this._note = new Note(id);
+        }
         return this._note;
     }
 
 }
-
 

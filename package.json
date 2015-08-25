@@ -4,7 +4,7 @@
   "description": "A music theory Javascript library.",
   "main": "musyka.js",
   "scripts": {
-      "test": "mocha --compilers js:babel/register tests/"
+      "test": "mocha --compilers js:babel/register tests/unit/ tests/integration/"
   },
   "repository": {
     "type": "git",
@@ -16,6 +16,9 @@
     "url": "https://github.com/simonrycroft/muzyka/issues"
   },
   "homepage": "https://github.com/simonrycroft/muzyka",
+  "dependencies": {
+      "lodash": "^3.10.1"
+  },
   "devDependencies": {
     "babel": "^5.8.21",
     "chai": "^3.2.0",
