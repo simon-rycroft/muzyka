@@ -3,7 +3,7 @@
 import {assert, expect} from 'chai';
 import _ from 'lodash';
 
-import Note from '../../src/Note';
+import Note from '../../src/note';
 
 describe('The Note class', function () {
 

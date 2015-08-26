@@ -1,4 +1,3 @@
-'use strict';
 /*
 * Musyka - A Javascript Music Theory Library v0.0.0
 *
@@ -8,11 +7,13 @@
 * Released under the MIT license
 */
 
-import Note from './Note';
+'use strict';
+
+import Note from './note';
 
 export default class Muzyka {
 
-    note(id) {
+    createNote(id) {
         if (!this._note) {
             this._note = new Note(id);
         }
