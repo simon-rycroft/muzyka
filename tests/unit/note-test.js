@@ -28,9 +28,9 @@ describe('The Note class', function () {
     });
 
     function validateNote(expectedNote, actualNote) {
-        expect(expectedNote.name).to.equal(actualNote.name) ;
+        expect(expectedNote.name).to.equal(actualNote.name, 'name does not match') ;
         expect(expectedNote.keyNo).to.equal(actualNote.keyNo, 'keyNo does not match') ;
-        expect(expectedNote.frequency).to.equal(actualNote.frequency) ;
+        expect(expectedNote.frequency).to.equal(actualNote.frequency, 'frequency does not match') ;
     }
 });
 
