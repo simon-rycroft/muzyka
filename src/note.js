@@ -11,7 +11,7 @@ export default class Note {
         
         if(noteConfig) {
             this._name = noteConfig.name;
-            this._key = noteConfig.key;
+            this._keyNo = noteConfig.keyNo;
             this._frequency = noteConfig.frequency;
         }
     }
@@ -20,8 +20,8 @@ export default class Note {
         return this._name;
     }
 
-    get key() {
-        return this._key;
+    get keyNo() {
+        return this._keyNo;
     }
 
     get frequency() {

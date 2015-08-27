@@ -29,7 +29,7 @@ let intervals = {
 let keys = [
     {
         name: 'A0',
-        key: 1,
+        keyNo: 1,
         frequency: 27.5
     }
 ];

@@ -10,9 +10,9 @@ describe('The Note class', function () {
     let testsData = [
         {
             input: 'a0',
-            expected:  {
+            expectedNote:  {
                 name: 'A0',
-                key: 1,
+                keyNo: 1,
                 frequency: 27.5
             }
         }
@@ -20,14 +20,17 @@ describe('The Note class', function () {
 
     describe('allows us to create note objects', function () {
         _.each(testsData, (testData) => {
-            it('creates a valid ' + testData.expected.name + ' note object using ' + testData.input, function () {
+            it('creates a valid ' + testData.expectedNote.name + ' note object using ' + testData.input, function () {
                 let actualNote = new Note(testData.input);
-                assert.equal(testData.expected.name, actualNote.name) ;
-                assert.equal(testData.expected.key, actualNote.key) ;
-                assert.equal(testData.expected.frequency, actualNote.frequency) ;
+                validateNote(testData.expectedNote, actualNote);
             });
         });
     });
 
+    function validateNote(expectedNote, actualNote) {
+        expect(expectedNote.name).to.equal(actualNote.name) ;
+        expect(expectedNote.keyNo).to.equal(actualNote.keyNo, 'keyNo does not match') ;
+        expect(expectedNote.frequency).to.equal(actualNote.frequency) ;
+    }
 });
 
