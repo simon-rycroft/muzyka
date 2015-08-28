@@ -9,7 +9,12 @@ describe('The Note class', function () {
 
     let testsData = [
         {
-            input: 'a0',
+            inputs: [
+                {
+                    type: 'scientific',
+                    value: 'a0'
+                }
+            ],
             expectedNote:  {
                 name: 'A0',
                 keyNo: 1,
@@ -18,11 +23,13 @@ describe('The Note class', function () {
         }
     ];
 
-    describe('allows us to create note objects', function () {
-        _.each(testsData, (testData) => {
-            it('creates a valid ' + testData.expectedNote.name + ' note object using ' + testData.input, function () {
-                let actualNote = new Note(testData.input);
-                validateNote(testData.expectedNote, actualNote);
+    _.each(testsData, (testData) => {
+        describe('creates a valid ' + testData.expectedNote.name + ' note object ', function () {
+            _.each(testData.inputs, (input) => {
+                it('using the ' + input.type + ' notation "' + input.value + '"', function(){
+                    let actualNote = new Note(input.value);
+                    validateNote(testData.expectedNote, actualNote);
+                });
             });
         });
     });
