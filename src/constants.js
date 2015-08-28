@@ -1,8 +1,6 @@
 'use strict';
 
-let notesConfig = {};
-
-let intervals = {
+export const INTERVALS = {
     A: 1,
     As: 2,
     Bb: 2,
@@ -26,17 +24,11 @@ let intervals = {
     Ab: 12
 };
 
-let keys = [
+export const KEYS = [
     {
         name: 'A0',
         keyNo: 1,
         frequency: 27.5
     }
 ];
-
-
-notesConfig.keys = keys;
-notesConfig.intervals = intervals;
-
-export default notesConfig;
 

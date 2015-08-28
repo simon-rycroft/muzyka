@@ -1,18 +1,18 @@
 'use strict';
 
-import notesConfig from './config/notes';
+import * as constants from './constants';
 
 export default class Note {
 
     constructor(notation) {
 
         let keyNo = this.getKeyNoFromNotation_(notation);
-        let noteConfig = this.getNoteConfigFromKeyNo_(keyNo);
+        let noteData = this.getNoteDataByKeyNo_(keyNo);
         
-        if(noteConfig) {
-            this._name = noteConfig.name;
-            this._keyNo = noteConfig.keyNo;
-            this._frequency = noteConfig.frequency;
+        if(noteData) {
+            this._name = noteData.name;
+            this._keyNo = noteData.keyNo;
+            this._frequency = noteData.frequency;
         }
     }
 
@@ -32,14 +32,14 @@ export default class Note {
         let chars = notation.split('');
         let note = chars[0].toUpperCase();
         let octave = chars[1];
-        let keyNo = (octave * 12) + notesConfig.intervals[note];
+        let keyNo = (octave * 12) + constants.INTERVALS[note];
         return keyNo;
     }
 
-    getNoteConfigFromKeyNo_(keyNo) {
+    getNoteDataByKeyNo_(keyNo) {
         let index = keyNo-1;
-        if (notesConfig.keys[index]) {
-            return notesConfig.keys[index];
+        if (constants.KEYS[index]) {
+            return constants.KEYS[index];
         }
     }
 
