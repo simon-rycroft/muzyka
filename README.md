@@ -14,3 +14,14 @@ let muzyka = new Muzyka();
 // Create note objects
 var c4 = muzyka.createNote('c4');
 ```
+
+## Running Tests
+
+```
+// Run tests once
+gulp test
+
+// Run tests every time a file changes
+gulp watch-test
+```
+
