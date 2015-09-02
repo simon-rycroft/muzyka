@@ -3,9 +3,6 @@
   "version": "0.0.0",
   "description": "A music theory Javascript library.",
   "main": "musyka.js",
-  "scripts": {
-    "test": "mocha --reporter=min --compilers js:babel/register tests/unit/ tests/integration/"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/simonrycroft/muzyka.git"
