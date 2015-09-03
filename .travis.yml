@@ -7,8 +7,8 @@ install:
  - npm install -g gulp@3.9.0
  - npm install
 before_script:
- - phantomjs -version
- - mocha-phantomjs -version
+ - phantomjs --version
+ - mocha-phantomjs --version
  - gulp &
  - sleep 5 # give gulp background task some time to execute.
 script:
