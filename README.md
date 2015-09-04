@@ -2,6 +2,7 @@
 A music theory Javascript library
 
 [![Build Status](https://travis-ci.org/simonrycroft/muzyka.svg?branch=master)](https://travis-ci.org/simonrycroft/muzyka)
+[![Stories in Ready](https://badge.waffle.io/simonrycroft/muzyka.svg?label=ready&title=Ready)](http://waffle.io/simonrycroft/muzyka)
 
 ## Project Status
 This is proof of concept stuff, not to be used for anything, by anyone, ever.
