@@ -9,4 +9,5 @@ before_script:
  - sleep 5 # give gulp background task some time to execute.
 script:
  - make test
+ - make lint
 
